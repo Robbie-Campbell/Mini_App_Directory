@@ -4,12 +4,12 @@ from random import randint
 # Initialise standard variables and create a card_deck class
 class CardDeck:
     def __init__(self):
-        self.royals = ["Jack", "Queen", "King", "Ace"]
-        self.names = ["Hearts", "Diamonds", "Spades", "Clubs"]
+        self.royals = ["JACK", "QUEEN", "KING", "ACE"]
+        self.names = ["HEARTS", "DIAMONDS", "SPADES", "CLUBS"]
         self.full_deck = self.create_deck()
         self.total_cards = 52
         self.card_drawn = ""
-        self.card_PNG_value_default = "Cards/PNG/"
+        self.card_PNG_value_default = "PNG/"
         self.PNG_value = ""
         self.array_row = []
 
