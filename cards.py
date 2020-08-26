@@ -1,4 +1,5 @@
 from random import randint
+from pygame import mixer
 
 
 # Initialise standard variables and create a card_deck class
@@ -9,6 +10,9 @@ class CardDeck:
         self.full_deck = self.create_deck()
         self.total_cards = 52
         self.card_drawn = ""
+        mixer.init()
+        mixer.music.load('aos.mp3')
+        mixer.music.set_volume(0.05)
         self.card_PNG_value_default = "PNG/"
         self.PNG_value = ""
         self.array_row = []
@@ -54,5 +58,7 @@ class CardDeck:
         card_value = [first_letter[0] for first_letter in first_letters]
         if card_value[0] == "1":
             card_value[0] = "10"
+        elif first_letters[0] == "ACE" and first_letters[2] == "SPADES":
+            mixer.music.play()
         self.PNG_value = self.card_PNG_value_default + (card_value[0] + card_value[len(card_value) - 1] + ".png")
         return self.PNG_value
