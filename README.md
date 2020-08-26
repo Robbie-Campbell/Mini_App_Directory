@@ -1,5 +1,4 @@
 # Random_Cards
-:rocket: A deck of cards which generates random cards :rocket:
 
 ![image](https://user-images.githubusercontent.com/56073739/91320046-01972180-e7b5-11ea-8660-bfcae84522ed.png)
 
