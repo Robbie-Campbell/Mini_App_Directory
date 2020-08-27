@@ -6,12 +6,12 @@ Author: Robbie Campbell
 Date: 26/08/2020
 """
 
-from Games.Classes.choice import Options
+from Games.Classes.Home.choice import Options
 import tkinter as tk
 
 # Execute the application
 if __name__ == "__main__":
     root = tk.Tk()
     app = Options(master=root)
-    root.title("Choose an option")
+    root.title("Home")
     app.mainloop()
