@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter.font import Font
 from Classes.Cards import card_gui
 from Classes.View import view_gui
-import os
 
 
 # This is a class which extends to all of the children classes
@@ -14,10 +13,9 @@ class Options(tk.Frame):
         self.master.size()
         self.grid()
 
-        self.root = os.getenv("RootPathPython")
         # Create a home image
         self.canvas = tk.Canvas(self, width=200, height=200, bd=0, highlightthickness=0, bg="#000")
-        self.img = tk.PhotoImage(file=self.root + "/Mini_App_Directory/Classes/Home/python.png")
+        self.img = tk.PhotoImage(file="Classes/Home/python.png")
         self.canvas.create_image(0, 0, anchor="nw", image=self.img)
         self.canvas.grid(row=0, column=0, rowspan=3)
 
