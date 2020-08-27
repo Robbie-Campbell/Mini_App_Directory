@@ -54,7 +54,7 @@ class CardDeck:
         self.full_deck = self.create_deck()
 
     # Converts the text information from the card drawn into a format which can be read into the png file, to display
-    # an image in the gui.py file
+    # an image in the card_gui.py file
     def get_card_value(self):
         first_letters = self.card_drawn.split(" ")
         card_value = [first_letter[0] for first_letter in first_letters]
