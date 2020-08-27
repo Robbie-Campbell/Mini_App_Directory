@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter.font import Font
-from Cards import cards
+from Games.Classes.Cards import cards
 
 
 # Initialise standard variables and display assets onto the frame of the application class
@@ -17,17 +17,17 @@ class Application(tk.Frame):
 
         # Show the labels and the button object on the frame
         self.card = cards.CardDeck()
-        self.card_name_label = tk.Label(self, font=self.arial14, fg="#DDD", bg="#111")
+        self.card_name_label = tk.Label(self, font=self.arial14, fg="#DDD", bg="#111", pady=5)
         self.card_name_label["text"] = "DRAW A RANDOM CARD"
-        self.cards_left_label = tk.Label(self, font=self.arial10, fg="#DDD", bg="#111")
+        self.cards_left_label = tk.Label(self, font=self.arial10, fg="#DDD", bg="#111", pady=5)
         self.cards_left_label["text"] = "YOU HAVE {} CARDS LEFT IN THE PACK!".format(self.card.total_cards)
         self.cards_left_label.pack()
         self.card_name_label.pack()
         self.canvas = tk.Canvas(self, width=400, height=600, bd=0, highlightthickness=0, bg="#111")
-        self.canvas.pack()
+        self.canvas.pack(pady=10)
 
         # Create a default image for application startup
-        self.img = tk.PhotoImage(file="PNG/AS.png")
+        self.img = tk.PhotoImage(self.card.PNG_value)
         self.canvas.create_image(0, 0, anchor="nw", image=self.img)
 
         # Button options

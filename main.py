@@ -6,12 +6,12 @@ Author: Robbie Campbell
 Date: 26/08/2020
 """
 
-from Cards import gui
+from Games.Classes.choice import Options
 import tkinter as tk
 
 # Execute the application
 if __name__ == "__main__":
     root = tk.Tk()
-    app = gui.Application(master=root)
-    root.title("Random card generator")
+    app = Options(master=root)
+    root.title("Choose an option")
     app.mainloop()
