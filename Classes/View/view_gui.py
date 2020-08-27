@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter.font import Font
-from Games.Classes.View import image_sorter
-from Games.Classes.Home import return_home_button
+from Classes.View import image_sorter
+from Classes.Home import return_home_button
 
 
 class TheView(tk.Frame):
@@ -27,7 +27,7 @@ class TheView(tk.Frame):
 
         # Create a default image for application startup
         self.canvas = tk.Canvas(self, width=600, height=400, bd=0, highlightthickness=0, bg="#000")
-        self.img = tk.PhotoImage(file="C:/Users/robbi/Python/DeckOfCards/Games/Classes/View/PNG/1.png")
+        self.img = tk.PhotoImage(file=self.views.image_prefix + "1.png")
         self.canvas.create_image(0, 0, anchor="nw", image=self.img)
         self.canvas.grid(row=2, columnspan=2)
 

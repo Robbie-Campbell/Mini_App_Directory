@@ -6,7 +6,7 @@ class Images:
     def __init__(self):
         self.index = 1
         self.root = os.getenv("RootPathPython")
-        self.image_prefix = self.root + "/DeckOfCards/Games/Classes/View/PNG/"
+        self.image_prefix = self.root + "/Mini_App_Directory/Classes/View/PNG/"
         self.descriptors = {1: "Isnt That Nice?",
                             2: "Na ma ste",
                             3: "God of war was good",

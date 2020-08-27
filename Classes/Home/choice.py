@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter.font import Font
-from Games.Classes.Cards import card_gui
-from Games.Classes.View import view_gui
+from Classes.Cards import card_gui
+from Classes.View import view_gui
 
 
 # This is a class which extends to all of the children classes

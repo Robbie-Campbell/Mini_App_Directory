@@ -13,10 +13,10 @@ class CardDeck:
         self.card_drawn = ""
         self.root = os.getenv("RootPathPython")
         mixer.init()
-        mixer.music.load(self.root + "/DeckOfCards/Games/Classes/Cards/aos.mp3")
+        mixer.music.load(self.root + "/Mini_App_Directory/Classes/Cards/aos.mp3")
         mixer.music.set_volume(0.05)
-        self.card_PNG_value_default = self.root + "/DeckOfCards/Games/Classes/Cards/PNG/"
-        self.PNG_value = self.root + "/DeckOfCards/Games/Classes/Cards/PNG/AS.png"
+        self.card_PNG_value_default = self.root + "/Mini_App_Directory/Classes/Cards/PNG/"
+        self.PNG_value = self.root + "/Mini_App_Directory/Classes/Cards/PNG/AS.png"
         self.array_row = []
 
     def create_deck(self):
