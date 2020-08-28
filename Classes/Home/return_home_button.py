@@ -1,4 +1,4 @@
-import Games.Classes.Home.choice as choice
+import Classes.Home.choice as choice
 import tkinter as tk
 from tkinter.font import Font
 
@@ -13,5 +13,5 @@ class ReturnHome:
         self.window = window
 
     def return_home(self):
-        home = choice.Options(self.window)
+        choice.Options(self.window)
         self.window_to_destroy.destroy()

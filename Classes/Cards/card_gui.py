@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter.font import Font
-from Games.Classes.Cards import cards
-from Games.Classes.Home import return_home_button
+from Classes.Cards import cards
+from Classes.Home import return_home_button
 
 
 # Initialise standard variables and display assets onto the frame of the application class

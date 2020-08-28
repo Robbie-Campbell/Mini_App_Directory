@@ -6,7 +6,7 @@ Author: Robbie Campbell
 Date: 26/08/2020
 """
 
-from Games.Classes.Home.choice import Options
+from Classes.Home.choice import Options
 import tkinter as tk
 
 # Execute the application
