@@ -14,4 +14,5 @@ class ReturnHome:
 
     def return_home(self):
         choice.Options(self.window)
+        self.window.title("Home")
         self.window_to_destroy.destroy()

@@ -4,7 +4,7 @@ from Classes.View import image_sorter
 from Classes.Home import return_home_button
 
 
-class TheView(tk.Frame):
+class Application(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master, bg="#000")
         self.master = master
